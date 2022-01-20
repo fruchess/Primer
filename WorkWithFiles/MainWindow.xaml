@@ -31,10 +31,13 @@
                             AcceptsReturn="True"
                             HorizontalAlignment="Left"
                             MinWidth="320"
+                            
                             materialDesign:TextFieldAssist.HasClearButton="True"
                             materialDesign:HintAssist.Hint="Введите текст сюда"
                                  ScrollViewer.VerticalScrollBarVisibility="Auto"
-                            Height="100"/>
+                            Height="100"
+                            Style="{StaticResource MaterialDesignFloatingHintTextBox}"     
+                                 />
                         <TextBox x:Name="textbox2"
                             MaxWidth="320"
                             TextWrapping = "Wrap"
@@ -45,7 +48,9 @@
                             materialDesign:TextFieldAssist.HasClearButton="True"
                                  ScrollViewer.VerticalScrollBarVisibility="Auto"
                                  IsReadOnly="True"
-                            HorizontalAlignment="Right"/>
+                            HorizontalAlignment="Right"
+                             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                            />
                     </Grid>
 
                 </StackPanel>
